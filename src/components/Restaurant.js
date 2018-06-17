@@ -13,7 +13,6 @@ import VidTimeControlBar from './VidTimeControlBar';
 import {MidPlayButton, BottomPlayButton, BottomPauseButton, SpeakerSound, SpeakerNoSound, Minimize, Expand} from '../style/images/video_icons';
 import '../style/videocontrols.css'
 
-
 class Restaurant extends Component {
    constructor(props){
        super(props)
