@@ -1,0 +1,229 @@
+@import "variables.scss";
+@import "mixins.scss";
+@mixin flexify($dir: column, $jc: space-around, $ai: flex-start){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+
+
+.Island_container{
+    width: 100%;
+    height: 798px;
+    background: $shadows url('./images/explore_faded_bg.jpg') top right no-repeat;
+    position: relative; 
+}
+
+.island_heading{
+    height: 300px;
+    padding-left: 7.5em;
+    padding-top: 8.5em;
+    h3{
+        font-size: 49px;
+        font-family: $font;
+        color: $nvblu;
+    }
+}
+
+.island_heading::before{
+    content: '';
+    width: 2px;
+    position: absolute;
+    height: 46px;
+    background-color: $darkgold;
+    left: 90px;
+}
+
+.island_news{
+    @include flexify(row);
+    width: 100%;
+    .island_tips, .island_food, .island_things{
+        width: 33.4%;
+        @include flexify(column, flex-start);
+        height: 498px;
+        padding: 60px;
+        h4{
+            font-size: 26px;
+            font-family: $font;
+            color: $darkgold;
+            text-transform: uppercase;
+            line-height: 28px;
+            padding-bottom: 10px;
+            font-weight: 900;
+        }
+    }
+    p:nth-child(2){
+        line-height: 2rem;
+        color: $nvblu;
+        font-size: 17px;
+    }
+    p:nth-child(3){
+        line-height: 4rem;
+    }
+}
+
+.island_tips:hover{
+    background: url('./images/five_tips_bg.jpg');
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    h4{
+        color: white;
+        font-weight: bold;
+    }
+    h4:hover{
+        color: $darkgold;
+        cursor: pointer;
+    }
+    p:nth-child(2){
+        color: white;
+        font-weight: bold;
+    }
+    p:nth-child(3){
+        color: white;
+        font-weight: bold;
+    }
+    p:hover:nth-child(3){
+        color: $darkgold;
+        cursor: pointer;
+    }
+}
+
+
+.island_food:hover{
+    background: url('./images/delicious_homemade_bg.jpg');
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    h4{
+        color: white;
+        font-weight: bold;
+    }
+    h4:hover{
+        color: $darkgold;
+        cursor: pointer;
+    }
+    p:nth-child(2){
+        color: white;
+        font-weight: bold;
+    }
+    p:nth-child(3){
+        color: white;
+        font-weight: bold;
+    }
+    p:hover:nth-child(3){
+        color: $darkgold;
+        cursor: pointer;
+    }
+}
+
+.island_things:hover{
+    background: url('./images/things_to_do_bg.jpg');
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    h4{
+        color: white;
+        font-weight: bold;
+    }
+    h4:hover{
+        color: $darkgold;
+        cursor: pointer;
+    }
+    p:nth-child(2){
+        color: white;
+        font-weight: bold;
+    }
+    p:nth-child(3){
+        color: white;
+        font-weight: bold;
+    }
+    p:hover:nth-child(3){
+        color: $darkgold;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1260px){
+    .Island_container{
+        height: 900px;
+        .island_tips, .island_food, .island_things{
+            height: 600px;
+        }
+    }
+}
+
+@media screen and (max-width: 1069px){
+    .Island_container{
+        height: 1215px;
+        .island_heading{
+            padding-left: 5.5em;
+        }
+        .island_news{
+            height: 915px;
+            display: flex;
+            flex-direction: column;
+            .island_tips, .island_food, .island_things{
+                width: 100%;
+                padding: 28px;
+                h4{
+                    font-size: 27px;
+                }
+            }
+        }
+    }
+    .island_heading::before{
+        left: 62px;
+    }
+}
+
+@media screen and (max-width: 899px){
+    .Island_container{
+        height: 1115px;
+        .island_heading{
+            height: 200px;
+            padding-left: 3rem;
+            padding-top: 4.5rem;
+        }
+        .island_heading::before {
+            left: 18px;
+        }
+        .island_news{
+            height: 915px;
+            .island_tips, .island_food, .island_things{
+                padding: 27px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Island_container{
+        height: 1145px;
+        .island_news{
+            height: 945px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    .Island_container{
+        height: 1535px;
+        .island_heading{
+            padding-top: 3rem;
+        }
+        .island_heading::before{
+            height: 5.8rem;
+        }
+        .island_news{
+            height: 1335px;
+        }
+    }
+}

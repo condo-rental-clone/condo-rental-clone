@@ -1,0 +1,280 @@
+$nvblu: #30373f;
+$goldyLox: #ab8c6b;
+$bgColor: #f0e9e1;
+$ariba: 'Abhaya Libre', serif;
+.our-suites-comp{
+    height: 116vh;
+    background-color: $bgColor;
+    .suites-head{
+        position: relative;
+        height: 19rem;
+        color: $nvblu;
+        padding: 7.5rem 6rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        h3{
+            font-family: $ariba;
+            font-size: 3.0625rem;
+            margin-left: 1.25rem;
+            transform: translateY(0);
+            transition: translate 0.35s ease-in;
+            font-weight: 600;
+        }
+
+        h3::before{
+            content: '';
+            background-color: $goldyLox;
+            width: 1.5px;
+            height: 0.85em;
+            position: absolute;
+            left: -15%;
+            top: 5%;
+        }
+    }
+    .suite-flipper{
+        font-size: 1.625em;
+        margin-right: -1.5rem;
+        display: flex;
+        width: 8em;
+        justify-content: space-evenly;
+        .left-select, .right-select{
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            padding: 0.25em;
+            transition: color 0.2s ease-in-out;
+        }
+        .prev-suite-num, .next-suite-num{
+            font-family: $ariba;
+            margin: 0.75em;
+        }
+        .left-select:hover, .right-select:hover{
+            color: $goldyLox;
+        }
+        .left-select{
+            div.arrow-left{
+                margin: 0.5em;
+                transform: rotate(90deg);
+            }
+        }
+        .right-select{
+            div.arrow-right{
+                margin: 0.5em;
+                transform: rotate(-90deg)
+            }
+        }
+    }
+    .suites-info{
+        display: flex;
+        width: 100%;
+        position: relative;
+        .img-cover{
+            z-index: 2;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $bgColor;
+            height: 100%;
+            width: 60%;
+        }
+        div.suites-img{
+            background: url('./images/suites_real_img.jpg') top;
+            background-size: cover;
+            width: 60%;
+            height: 37.5rem;
+            cursor: pointer;
+            transition: background-color 0.25s ease-in-out;
+        }
+        .img-cover[data-aos="unveil"]
+        {
+            height: 37.5rem;
+            transition-property: height;
+            transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+            &.aos-animate {
+                height: 0;
+            }
+        }
+        div.suites-img:hover{
+            background-color: rgba(48,55,63,0.5);
+            background-blend-mode: multiply;
+        }
+        .suite-detailed-info{
+            width: 40%;
+            position: relative;
+            h4{
+                background-color: $bgColor;
+                font-size: 2.25em;
+                font-family: $ariba;
+                color: $goldyLox;
+                text-align: right;
+                padding: 1em;
+                cursor: pointer;
+            }
+        //     h4[data-aos="slideUp"]{
+        //     margin-top: 10%;
+        //     opacity: 0;
+        //     transition-property: margin-top, opacity;
+        //     transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+        //     &.aos-animate{
+        //         margin-top: 0;
+        //         opacity: 1;
+        //     }
+        // }
+            // .guest-price-info[data-aos="slideUp"],
+            // .details-box h5[data-aos="slideUp"],
+            // .details-box p[data-aos="slideUp"]{
+            //     margin-top: 15%;
+            //     opacity: 0;
+            //     transition-property: margin-top, opacity;
+            //     transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+            //     &.aos-animate{
+            //         margin-top: 0;
+            //         opacity: 1;
+            //     }
+            // }
+            h4:hover{
+                color: $nvblu;
+            }
+            .guest-price-info{
+                background-color: $goldyLox;
+                display: flex;
+                justify-content: space-between;
+                color: white;
+                padding: 1.25em;
+                align-items: center;
+                font-size: 1.0625em;
+                // opacity: 0;
+                
+            }
+            .details-box{
+                padding: 2em;
+                color: white;
+                line-height: 175%;
+                font-size: 1.0625em;
+                text-align: right;
+                width: 100%;
+                position: relative;
+                h5{
+                    font-size: 1.5em;
+                    font-family: $ariba;
+                    color: $goldyLox;
+                }
+                height: 27.05rem;
+            }
+            overflow: hidden;
+        }
+        .suite-detailed-info .before-details{
+            width: 100%;
+            height: 100%;
+            background-color: $nvblu;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+        }
+        .suite-detailed-info .before-details[data-aos="fadeIn"]{
+            opacity: 0;
+            transition-property: opacity;
+            transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+            &.aos-animate{
+                opacity: 1;
+            }
+        }
+    }
+}
+@media (max-width: 1069px){
+    .our-suites-comp{
+        // margin-top: 25rem;
+        width: 100%;
+        height: 72.125rem;
+        .suites-info{
+            flex-direction: column;
+            div.suites-img, .img-cover[data-aos="unveil"]{
+                width: 100%;
+                height: 400px;
+            }
+            .pool-img-box{
+                width: calc(100% - 5rem);
+                left: 2.5rem;
+            }
+            .suite-detailed-info{
+                width: 100%;
+                .details-box{
+                    height: 17.625rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 899px){
+    .our-suites-comp{
+        height: 65.6rem;
+        .suites-head{
+            flex-direction: column;
+            height: 200px;
+            padding: 3rem 1.5rem;
+            h3{
+                width: 100%;
+                // margin-top: 2rem;
+                &::before{
+                    left: -1.5rem;
+                    top: 0.25rem;
+                    width: 2px;
+                }
+            }
+            .suite-flipper{
+                margin-left: calc(100% - 7.5em);
+                margin-top: 2.5rem;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .our-suites-comp{
+        height: 65.5rem;
+    }
+
+}
+@media (max-width: 600px){
+    .our-suites-comp{
+        height: 59.35rem;
+        .suites-info{
+            div.suites-img, .img-cover[data-aos="unveil"]{
+                height: 300px;
+            }
+            .suite-detailed-info{
+                width: 100%;
+                .details-box{
+                    height: 17.625rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px){
+    .our-suites-comp{
+        height: 64.5rem;
+    }
+}
+@media (max-width: 468px){
+    .our-suites-comp{
+        .suites-info{
+            .suite-detailed-info{
+                width: 100%;
+                .details-box{
+                    height: 26.875rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 400px){
+    .our-suites-comp{
+        height: 68.5rem;
+    }
+}

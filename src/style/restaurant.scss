@@ -1,0 +1,539 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+
+.Restaurant_container{
+    height: 1961px;
+    .Restaurant{
+        width: 100%;
+        margin-top: 10%;
+        position: relative;
+        height: 1961px;
+    }
+}
+
+.amazing_container{
+    width: 47%;
+    margin-left: 11%;
+    .title_amazing{
+        color: $nvblu;
+        font-size: 49px;
+        font-family: $font;
+        margin-left: 27px;
+        margin-top: -10px;
+    }
+    .text_amazing{
+        font-family: 'Open Sans';
+        color: $nvblu;
+        font-size: 17px;
+        margin-top: 32px;
+        margin-left: 27px;
+        line-height: 29px;
+        .amazing_read_more{
+           color: $darkgold;
+           margin-top: 13px;
+           font-weight: 600;
+        }
+    }
+}
+
+.amazing_container::before{
+   content: '';
+   position: absolute;
+   width: 2px;
+   background-color: $darkgold;
+   height: 17rem;
+}
+
+// .amazing_img_one{
+//     width: 28.5%;
+//     margin-right: 2.5rem;
+//     top: 0;
+//     right: 0;
+//     height: 745px;
+//     position: absolute;
+//     overflow-y: hidden;
+//     overflow-x: hidden;
+//     .shadow_one[data-aos="slideIn"], .amazing_steak[data-aos='slideIn']{
+//         top: -745px;
+//         transition-property: top;
+//         transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+//         &.aos-animate{
+//             top: 0;
+//         }
+//     }
+//     .shadow_one, .amazing_steak{
+        // position: absolute;
+        // width: 100%;
+        // top: -745px;
+        // right: 0;
+        // height: 745px;
+        // background: #f2ece5;
+//     }
+//     .amazing_steak{
+        // background-position: center;
+        // background-size: cover;
+//     }   
+// }
+
+@keyframes slideDown{
+    0%{
+        top: -745px;
+    }
+    50%{
+        top: 0;
+    }
+    100%{
+        top: 745px;
+    }
+}
+
+@keyframes slideDownTwo{
+    0%{
+        top: -22rem;
+    }
+    50%{
+        top: 0;
+    }
+    100%{
+        top: 22rem;
+    }
+}
+
+@keyframes slideDownThree{
+    0%{
+        top: -21rem;
+    }
+    50%{
+        top: 0;
+    }
+    100%{
+        top: 21rem;
+    }
+}
+
+.amazing_img_one{
+    width: 28.5%;
+    margin-right: 2.5rem;
+    top: 0;
+    right: 0;
+    height: 745px;
+    position: absolute;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    .shadow_one[data-aos="slideIn"]{
+        position: absolute;
+        width: 100%;
+        top: 745px;
+        right: 0;
+        height: 745px;
+        z-index: 5;
+        background: $shadows;
+            &.aos-animate{
+                animation: slideDown 2s cubic-bezier(0.23,1,0.32,1);
+            }
+    }
+    .amazing_steak[data-aos="slideIn"]{
+        position: absolute;
+        width: 100%;
+        top: -745px;
+        right: 0;
+        height: 745px;
+        transition: top 1s cubic-bezier(0.23,1,0.32,1);
+        background-position: center;
+        background-size: cover;
+        &.aos-animate{
+            top: 0;
+        }
+    }
+}
+
+// .amazing_img_two{
+//     margin-left: 3%;
+//     top: 22%;
+//     width: 28%;
+//     position: absolute;
+//     height: 22rem;
+//     overflow-y: hidden;
+//     overflow-x: hidden;
+//     .shadow_two[data-aos="slideInTwo"], .amazing_people[data-aos='slideInTwo']{
+//         top: -22%;
+//         transition-property: top;
+//         transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+//         &.aos-animate{
+//             top: 0;
+//         }
+//     }
+//     .shadow_two, .amazing_people{
+//         top: -22%;
+//         background: #f2ece5;
+//         position: absolute;
+//         width: 100%;
+//         height: 22rem;
+//     }
+//     .amazing_people{
+//         background-position: center;
+//         background-size: cover;
+//     }
+// }
+
+.amazing_img_two{
+    margin-left: 3%;
+    top: 30rem;
+    width: 28%;
+    position: absolute;
+    height: 22rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    .shadow_two[data-aos="slideInTwo"]{
+        position: absolute;
+        width: 100%;
+        top: 22rem;
+        // right: 0;
+        height: 22rem;
+        z-index: 5;
+        background: $shadows;
+            &.aos-animate{
+                animation: slideDownTwo 2s cubic-bezier(0.23,1,0.32,1);
+            }
+    }
+    .amazing_people[data-aos="slideInTwo"]{
+        position: absolute;
+        width: 100%;
+        top: 22rem;
+        right: 0;
+        height: 22rem;
+        transition: top 1s cubic-bezier(0.23,1,0.32,1);
+        background-position: center;
+        background-size: cover;
+        &.aos-animate{
+            top: 0;
+        }
+    }
+}
+
+// .amazing_img_three{
+//     position: absolute;
+//     width: 28.5%;
+//     left: 31.5%;
+//     top: 42rem;
+//     height: 21rem;
+//     overflow-y: hidden;
+//     overflow-x: hidden;
+//     .shadow_three[data-aos="slideInThree"], .amazing_lunch[data-aos='slideInThree']{
+//         top: -42rem;
+//         transition-property: top;
+//         transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+//         &.aos-animate{
+//             top: 0;
+//         }
+//     }
+//     .shadow_three, .amazing_lunch{
+//         position: absolute;
+//         width: 100%;
+//         top: -42rem;
+//         background: #f2ece5;
+//         height: 21rem;
+//     }
+//     .amazing_lunch{
+//         background-position: center;
+//         background-size: cover;
+//     }
+// }
+
+.amazing_img_three{
+    position: absolute;
+    width: 28.5%;
+    left: 31.5%;
+    top: 43rem;
+    height: 21rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    .shadow_three[data-aos="slideInThree"]{
+        position: absolute;
+        width: 100%;
+        top: 22rem;
+        height: 22rem;
+        z-index: 5;
+        background: $shadows;
+            &.aos-animate{
+                animation: slideDownThree 2s cubic-bezier(0.23,1,0.32,1);
+            }
+    }
+    .amazing_lunch[data-aos="slideInThree"]{
+        position: absolute;
+        width: 100%;
+        top: 21rem;
+        height: 21rem;
+        transition: top 1s cubic-bezier(0.23,1,0.32,1);
+        background-position: center;
+        background-size: cover;
+        &.aos-animate{
+            top: 0;
+        }
+    }
+}
+
+.amazing_box_1{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    background: $shadows;
+    left: 17%;
+    top: 33rem;
+    z-index: -1;
+}
+
+.amazing_box_2{
+   position: absolute;
+   width: 432px;
+   height: 300px;
+   background: $shadows;
+   right: 0;
+   top: 34rem;
+   z-index: -1;
+}
+
+.video_section{
+    position: relative;
+    top: 54rem;
+    // max-width: 100%;
+    cursor: pointer;
+    .video_image{
+        background: url('../style/images/amazing_restaurant_vid_img.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index: 50;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0,0,0,0.5);
+        background-blend-mode: multiply;
+        .play_button{
+            width: 5rem;
+            fill: white;
+            .triangle{
+                width: 1rem;
+            }
+        }
+    }
+    .video_image:hover{
+        background-color: rgba(54, 51, 51, 0.3);
+        background-blend-mode: multiply;
+        transition: 700ms;
+        .play_button{
+            fill: $gold;
+        }
+    }
+    .video_text{
+        color: white;
+        position: absolute;
+        z-index: 3;
+        bottom: 3.75rem;
+        left: 3.75rem;
+        h3{
+            font-size: 38px;
+            font-family: $font;
+            font-weight: 800;
+            margin-left: 26px;
+        }
+        p{
+            font-size: 17px;
+            margin-top: 2.5rem;
+            margin-left: 26px;
+            font-weight: 700;
+        }
+    }
+    .video_text::before{
+        content:'';
+        position: absolute;
+        background-color: $darkgold;
+        width: 2px;
+        height: 7rem;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .Restaurant_container{
+        height: 1877px;
+        .amazing_container{
+            width: 45%;
+            margin-left: 9.5rem;
+            .text_amazing{
+                margin-left: 40px;
+            }
+            .title_amazing{
+                margin-left: 40px;
+            }
+        }
+        .amazing_box_2{
+            width: 383px;
+        }
+    }
+}
+
+@media screen and (max-width: 1260px){
+    .Restaurant_container{
+        height: 1798px;
+        .amazing_container{
+            margin-left: 3%;
+            width: 55%;
+        }
+        .amazing_img_one{
+            width: 35%;
+        }
+        .amazing_box_2{
+            width: 418px;
+        }
+        .amazing_img_two{
+            margin-left: 2%;
+            .amazing_people{
+                width: 317px;
+                height: 260px;
+            }
+        }
+        .amazing_img_three{
+            left: 30.5%;
+            .amazing_lunch{
+                width: 317px;
+                height: 260px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1069px){
+    .Restaurant_container{
+        height: 1422px;
+        .amazing_container{
+            top: 36rem;
+            position: absolute;
+            margin-left: 2.5rem;
+            width: 93%;
+        }
+        .amazing_container::before{
+            height: 13rem;
+        }
+        .amazing_img_one{
+            height: 530px;
+            width: 92%;
+            background-position: center;
+            .amazing_steak{
+                height: 530px;
+            }
+        }
+        .amazing_img_three{
+            display: none;
+        }
+        .amazing_box_2{
+            position: absolute;
+            left: 7%;
+            top: 17%;
+            width: 50%;
+        }
+    }
+    .amazing_lunch, .amazing_people, .amazing_box_1{
+        display: none;
+    }
+    .video_section{
+        .video_image{
+            .play_button{
+                width: 3rem;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 899px){
+    .Restaurant_container{
+        height: 1213px;
+        .amazing_container{
+            margin-left: 1.2rem;
+            top: 29rem;
+            .title_amazing, .text_amazing{
+                margin-left: 25px;
+            }
+        }
+        .amazing_container::before{
+            height: 14.5rem;
+        }
+        .amazing_img_one{
+            height: 430px;
+            width: 95%;
+            left: 1.3rem;
+            .amazing_steak{
+                height: 430px;
+            }
+        }
+        .amazing_box_2{
+            display: none;
+        }
+        .video_section{
+            top: 48rem;
+            .video_image{
+                .play_button{
+                    width: 2rem;
+                }
+                .video_text{
+                    left: 2rem;
+                    p{
+                        display: none
+                    }
+                }
+                .video_text::before{
+                    height: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Restaurant_container{
+        height: 1158px; 
+    }
+}
+
+@media screen and (max-width: 375px){
+    .Restaurant_container{
+        height: 1091px;
+        .amazing_container{
+            top: 27rem;
+            width: 90%;
+            .text_amazing{
+                margin-top: 24px;
+            }
+            .title_amazing, .text_amazing{
+                margin-left: 20px;
+            }
+        }
+        .amazing_container::before {
+            height: 26rem;
+        }
+        .amazing_img_one{
+            height: 335px;
+            width: 330px;
+            top: 4rem;
+            .amazing_steak{
+                background-position: center;
+                background-size: cover;
+                height: 330px;
+                width: 335px;
+            }
+        }
+        .video_section{
+            top: 57rem;
+            height: 211px;
+            .video_image{
+                .video_text{
+                    display: none;
+                }
+            }
+        }
+    }
+}

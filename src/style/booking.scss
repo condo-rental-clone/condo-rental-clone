@@ -1,0 +1,398 @@
+@import "variables.scss", "mixins.scss";
+body>div>div>div>div>div>div>div>div>div>div[direction="up"]>div{
+    // left: -1000vw;
+    text-align: center;
+    font-size: 1.25rem!important;
+    font-family: "Abhaya Libre",serif!important;
+    // background-color: purple!important;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.320, 1)!important;
+}
+// Targeting the popover from material ui in GuestPicker.js
+body div[style="position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 2000;"]{
+    position: absolute!important;
+    bottom: unset!important;
+    height: 500vh!important;
+}
+body div[style="position: absolute;top: 0px;left: 0px;height: 500vh;right: 0px;z-index: 2000;"]>div{
+            background-color: purple!important;
+            width: 500px!important;
+            position: relative!important;
+            top: 31rem!important;
+            left: 45rem!important;
+        }
+body>div>div>div>div>div>div>div>div>div>button:nth-child(2){
+    margin: 0 auto!important;
+}
+body>div>div>div>div>div>div>div>div>div>button[tabindex="0"]>div>span{
+    text-transform: none!important;
+}
+body>div>div>div>div>div>div>div>div>div>button[tabindex="0"]:hover{
+    background-color: transparent!important;
+    color: $nvblu!important;
+}
+body>div>div>div>div>div>div>div>div>div>button:nth-child(1){
+    display: none!important;
+    &>div{
+        display: none;
+        &>span{
+                display: none;
+            }
+        }
+    }
+    body>div>div>div>div>div>div>div>div>div>div>div>div>div>button>span{
+        font-size:15px
+    }
+    .booking-comp{
+    position: absolute;
+    // width: 97.4%;
+    height: 12.6875em;
+    background-color: white;
+    z-index: 5;
+    box-shadow: 0 18px 35px rgba(50,50,93,0.1), 0 8px 15px rgba(0,0,0,0.07);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1px;
+    .booking-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #7f7c7f;
+        width: 25%;
+        h4{
+            font-size: 1.0625em;
+            font-weight: 400;
+        }
+        cursor: pointer;
+        .date .day, .date .year, .guestnum{
+            transition: color 0.2s ease-in-out;
+        }
+    }
+    .booking-section:hover{
+        .date .day, .date .year, .guestnum{
+            color: $nvblu;
+        }
+    }
+    .arrival-date{
+        position: absolute;
+    }
+    .departure-date{
+        left: 25%;
+        position: absolute;
+    }
+    .arrival-date.booking-section>div div:nth-child(2), .departure-date.booking-section>div div:nth-child(2){
+        display: none;
+    }
+    .arrival-date, .departure-date{
+        height: 100%!important;
+        &>div{
+            cursor: pointer!important;
+            width: 100%!important;
+            height: 100%!important;
+            &>div{
+                &>h4{
+                    color: #7f7c7f;
+                    position: absolute;
+                    top: 3.5rem;
+                }
+                padding-top: 3.5rem!important;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .date{
+                    &>span, &>div{
+                        height: 100%;
+                    }
+                    justify-content: center!important;
+                    align-items: center!important;
+                    display: flex!important;
+                    // justify-content: space-between;
+                    .month-year{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+    .arrival-date::after{
+        height: 55%;
+        width: 2px;
+        background-color: #f2ece5;
+        content: '';
+        position: absolute;
+        top: 22.5%;
+        right: 0;
+    }
+    .departure-date::after{
+        height: 55%;
+        width: 1.5px;
+        background-color: #f2ece5;
+        content: '';
+        position: absolute;
+        top: 22.5%;
+        right: 0;
+    }
+    .guests{
+        justify-content: center;
+        width: 25%;
+        left: 50%;
+        height: 100%;
+        position: absolute;
+        h4, p{
+            padding: 0.5rem;
+        }
+        >h4{
+            padding-top: 1.5rem;
+        }
+        .people-pop-input-text{
+            width: 100%;
+            height: 203px!important;
+            input{
+                width: 100%!important;
+                
+            }
+        }
+    }
+    .day, .guestnum{
+        color: $goldyLox;
+        font-weight: 600;
+        font-size: 4.85em;
+        font-family: 'Abhaya Libre', serif;
+    }
+    .day{
+        margin-right: 0.2em;
+    }
+    .month{
+        color: $nvblu;
+        font-size: 1.58675em;
+        font-weight: 700;
+        font-family: 'Abhaya Libre', serif;
+    }
+    .year{
+        color: $goldyLox;
+        font-size: 1.58675em;
+        font-weight: 700;
+        font-family: 'Abhaya Libre', serif;
+    }
+    .btn-container{
+        cursor: initial;
+        width: 25%;
+        justify-content: space-between;
+        padding: 2rem;
+        .large-btn{
+            // margin: 0.75em 0;
+            width: 100%;
+        }
+        .choose-apt:hover{
+            color: white;
+            border-color: $nvblu;
+            background-color: $nvblu;
+        }
+        .choose-apt{
+            border-color: $goldyLox;
+            background-color: #f2ece5;
+            color: #606060;
+        }
+        .inquire-now-container{
+            position: relative;
+            width: 100%;
+            // margin: 0.5em;
+            height: 62px;
+            overflow-y: hidden;
+            .inquire-now{
+                margin: 0;
+                border: none;
+                line-height: 3.75rem;            
+                background-color: $nvblu;
+                color: white;
+                &.disabled{
+                    cursor: not-allowed;
+                }
+            }
+            .disabled-display{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                opacity: 0;
+                // display: none;
+                left: 0;
+                right: 0;
+                color: white;
+                background-color: $goldyLox;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                transition: opacity 0.45s cubic-bezier(0.23, 1, 0.320, 1);
+                .disabled-span{
+                    margin-top: 1.5rem;
+                    transition: margin-top 0.45s cubic-bezier(0.23, 1, 0.320, 1);
+                }
+            }
+            .disabled-display:hover{
+                cursor: not-allowed;
+                opacity: 1;
+                .disabled-span{
+                    margin-top: 0;
+                }
+            }
+            .inquire-now:hover{
+                background-color: $goldyLox;
+            }
+        }
+    }
+}
+@media (min-width: 1480px){
+    .booking-comp{
+        left: calc((100vw - 1480px)/2);
+        width: calc(100% - (100vw - 1480px));
+    }
+}
+@media (max-width: 1480px){
+    .booking-comp{
+        left: 0;
+        right: 0;
+        // width: 100%
+    }
+}
+@media (max-width: 1400px){
+    .booking-comp{
+        .booking-section.arrival-date, .booking-section.departure-date, .booking-section.guests{
+            width: 20%;
+        }
+        .btn-container{
+            width: 40%;
+        }
+        .booking-section.departure-date{
+            left: 20%;
+        }
+        .booking-section.guests{
+            left: 40%;
+        }
+    }
+}
+@media (max-width: 1069px){
+    .booking-comp{
+        box-shadow: none;
+        .booking-section{
+            &.arrival-date>div>div>h4, &.departure-date>div>div>h4{
+                top: 4.25rem!important;
+            }
+            .day, .guestnum{
+                font-size: 3.4375rem;
+            }
+            .month-year{
+                .month{
+                    font-size: 1.1875rem;
+                }
+                .year{
+                    font-size: 1.1875rem;
+                }
+            }
+            &.guests>h4{
+                padding-top: 2.0625rem;
+            }
+        }
+    }
+}
+@media (max-width: 899px){
+    .booking-comp{
+        box-shadow: 0 18px 35px rgba(50,50,93,0.1), 0 8px 15px rgba(0,0,0,0.07);
+        height: 21rem;
+        .booking-section.arrival-date, .booking-section.departure-date, .booking-section.guests{
+            height: 10.25rem!important;
+            width: 33.33%;
+            &>div>div>h4{
+                top: 3.28rem!important;
+            }
+            .day, .guestnum{
+                font-size: 3.4375rem;
+            }
+            .month-year{
+                .month{
+                    font-size: 1.1875rem;
+                }
+                .year{
+                    font-size: 1.1875rem;
+                }
+            }
+            &::after{
+                height: 45%;
+                top: 30%
+            }
+        }
+        .booking-section.departure-date{
+            left: 33.33%;
+        }
+        .booking-section.guests{
+            left: 66.66%;
+            h4{
+                position: relative;
+                color: white;
+            }
+            h4::after{
+                position: absolute;
+                color: #7f7c7f;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                padding: 2.25rem 1rem 1rem 1.25rem;
+                content: "GST.";
+            }
+        }
+        .btn-container{
+            padding: 0 1rem 2rem 1rem;
+            margin-top: 10.25rem;
+            width: 100%;
+            height: 10.75rem;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .booking-comp{
+        box-shadow: 0 18px 35px rgba(50,50,93,0.1), 0 8px 15px rgba(0,0,0,0.07);
+        height: 21rem;
+        .booking-section.arrival-date, .booking-section.departure-date{
+            width: 40%;
+        }
+        .booking-section.departure-date{
+            left: 40%;
+        }
+        .booking-section.arrival-date, .booking-section.departure-date, .booking-section.guests{
+            height: 10.25rem!important;
+            &>div>div>h4{
+                font-size: 0.9275rem;
+                top: 3.28rem!important;
+            }
+            .day, .guestnum{
+                font-size: 3.4375rem;
+            }
+            .month-year{
+                .month{
+                    font-size: 1.1875rem;
+                }
+                .year{
+                    font-size: 1.1875rem;
+                }
+            }
+            &::after{
+                height: 45%;
+                top: 30%
+            }
+        }
+        .booking-section.departure-date{
+            left: 40%;
+        }
+        .booking-section.guests{
+            width: 20%;
+            left: 80%;
+            h4{
+                font-size: 0.9275rem;
+                padding-top: 1.92rem;
+            }
+        }
+    }
+}
+
