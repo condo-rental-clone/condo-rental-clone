@@ -1,0 +1,339 @@
+.Restaurant_container {
+  height: 1961px; }
+  .Restaurant_container .Restaurant {
+    width: 100%;
+    margin-top: 10%;
+    position: relative;
+    height: 1961px; }
+
+.amazing_container {
+  width: 47%;
+  margin-left: 11%; }
+  .amazing_container .title_amazing {
+    color: #30373f;
+    font-size: 49px;
+    font-family: "Abhaya Libre", sans-serif;
+    margin-left: 27px;
+    margin-top: -10px; }
+  .amazing_container .text_amazing {
+    font-family: 'Open Sans';
+    color: #30373f;
+    font-size: 17px;
+    margin-top: 32px;
+    margin-left: 27px;
+    line-height: 29px; }
+    .amazing_container .text_amazing .amazing_read_more {
+      color: #ab8c6b;
+      margin-top: 13px;
+      font-weight: 600; }
+
+.amazing_container::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #ab8c6b;
+  height: 17rem; }
+
+@keyframes slideDown {
+  0% {
+    top: -745px; }
+  50% {
+    top: 0; }
+  100% {
+    top: 745px; } }
+
+@keyframes slideDownTwo {
+  0% {
+    top: -22rem; }
+  50% {
+    top: 0; }
+  100% {
+    top: 22rem; } }
+
+@keyframes slideDownThree {
+  0% {
+    top: -21rem; }
+  50% {
+    top: 0; }
+  100% {
+    top: 21rem; } }
+
+.amazing_img_one {
+  width: 28.5%;
+  margin-right: 2.5rem;
+  top: 0;
+  right: 0;
+  height: 745px;
+  position: absolute;
+  overflow-y: hidden;
+  overflow-x: hidden; }
+  .amazing_img_one .shadow_one[data-aos="slideIn"] {
+    position: absolute;
+    width: 100%;
+    top: 745px;
+    right: 0;
+    height: 745px;
+    z-index: 5;
+    background: #f2ece5; }
+    .amazing_img_one .shadow_one[data-aos="slideIn"].aos-animate {
+      animation: slideDown 2s cubic-bezier(0.23, 1, 0.32, 1); }
+  .amazing_img_one .amazing_steak[data-aos="slideIn"] {
+    position: absolute;
+    width: 100%;
+    top: -745px;
+    right: 0;
+    height: 745px;
+    transition: top 1s cubic-bezier(0.23, 1, 0.32, 1);
+    background-position: center;
+    background-size: cover; }
+    .amazing_img_one .amazing_steak[data-aos="slideIn"].aos-animate {
+      top: 0; }
+
+.amazing_img_two {
+  margin-left: 3%;
+  top: 30rem;
+  width: 28%;
+  position: absolute;
+  height: 22rem;
+  overflow-y: hidden;
+  overflow-x: hidden; }
+  .amazing_img_two .shadow_two[data-aos="slideInTwo"] {
+    position: absolute;
+    width: 100%;
+    top: 22rem;
+    height: 22rem;
+    z-index: 5;
+    background: #f2ece5; }
+    .amazing_img_two .shadow_two[data-aos="slideInTwo"].aos-animate {
+      animation: slideDownTwo 2s cubic-bezier(0.23, 1, 0.32, 1); }
+  .amazing_img_two .amazing_people[data-aos="slideInTwo"] {
+    position: absolute;
+    width: 100%;
+    top: 22rem;
+    right: 0;
+    height: 22rem;
+    transition: top 1s cubic-bezier(0.23, 1, 0.32, 1);
+    background-position: center;
+    background-size: cover; }
+    .amazing_img_two .amazing_people[data-aos="slideInTwo"].aos-animate {
+      top: 0; }
+
+.amazing_img_three {
+  position: absolute;
+  width: 28.5%;
+  left: 31.5%;
+  top: 43rem;
+  height: 21rem;
+  overflow-y: hidden;
+  overflow-x: hidden; }
+  .amazing_img_three .shadow_three[data-aos="slideInThree"] {
+    position: absolute;
+    width: 100%;
+    top: 22rem;
+    height: 22rem;
+    z-index: 5;
+    background: #f2ece5; }
+    .amazing_img_three .shadow_three[data-aos="slideInThree"].aos-animate {
+      animation: slideDownThree 2s cubic-bezier(0.23, 1, 0.32, 1); }
+  .amazing_img_three .amazing_lunch[data-aos="slideInThree"] {
+    position: absolute;
+    width: 100%;
+    top: 21rem;
+    height: 21rem;
+    transition: top 1s cubic-bezier(0.23, 1, 0.32, 1);
+    background-position: center;
+    background-size: cover; }
+    .amazing_img_three .amazing_lunch[data-aos="slideInThree"].aos-animate {
+      top: 0; }
+
+.amazing_box_1 {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  background: #f2ece5;
+  left: 17%;
+  top: 33rem;
+  z-index: -1; }
+
+.amazing_box_2 {
+  position: absolute;
+  width: 432px;
+  height: 300px;
+  background: #f2ece5;
+  right: 0;
+  top: 34rem;
+  z-index: -1; }
+
+.video_section {
+  position: relative;
+  top: 54rem;
+  cursor: pointer; }
+  .video_section .video_image {
+    background: url("../style/images/amazing_restaurant_vid_img.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply; }
+    .video_section .video_image .play_button {
+      width: 5rem;
+      fill: white; }
+      .video_section .video_image .play_button .triangle {
+        width: 1rem; }
+  .video_section .video_image:hover {
+    background-color: rgba(54, 51, 51, 0.3);
+    background-blend-mode: multiply;
+    transition: 700ms; }
+    .video_section .video_image:hover .play_button {
+      fill: #c6ab8f; }
+  .video_section .video_text {
+    color: white;
+    position: absolute;
+    z-index: 3;
+    bottom: 3.75rem;
+    left: 3.75rem; }
+    .video_section .video_text h3 {
+      font-size: 38px;
+      font-family: "Abhaya Libre", sans-serif;
+      font-weight: 800;
+      margin-left: 26px; }
+    .video_section .video_text p {
+      font-size: 17px;
+      margin-top: 2.5rem;
+      margin-left: 26px;
+      font-weight: 700; }
+  .video_section .video_text::before {
+    content: '';
+    position: absolute;
+    background-color: #ab8c6b;
+    width: 2px;
+    height: 7rem; }
+
+@media screen and (max-width: 1400px) {
+  .Restaurant_container {
+    height: 1877px; }
+    .Restaurant_container .amazing_container {
+      width: 45%;
+      margin-left: 9.5rem; }
+      .Restaurant_container .amazing_container .text_amazing {
+        margin-left: 40px; }
+      .Restaurant_container .amazing_container .title_amazing {
+        margin-left: 40px; }
+    .Restaurant_container .amazing_box_2 {
+      width: 383px; } }
+
+@media screen and (max-width: 1260px) {
+  .Restaurant_container {
+    height: 1798px; }
+    .Restaurant_container .amazing_container {
+      margin-left: 3%;
+      width: 55%; }
+    .Restaurant_container .amazing_img_one {
+      width: 35%; }
+    .Restaurant_container .amazing_box_2 {
+      width: 418px; }
+    .Restaurant_container .amazing_img_two {
+      margin-left: 2%; }
+      .Restaurant_container .amazing_img_two .amazing_people {
+        width: 317px;
+        height: 260px; }
+    .Restaurant_container .amazing_img_three {
+      left: 30.5%; }
+      .Restaurant_container .amazing_img_three .amazing_lunch {
+        width: 317px;
+        height: 260px; } }
+
+@media screen and (max-width: 1069px) {
+  .Restaurant_container {
+    height: 1422px; }
+    .Restaurant_container .amazing_container {
+      top: 36rem;
+      position: absolute;
+      margin-left: 2.5rem;
+      width: 93%; }
+    .Restaurant_container .amazing_container::before {
+      height: 13rem; }
+    .Restaurant_container .amazing_img_one {
+      height: 530px;
+      width: 92%;
+      background-position: center; }
+      .Restaurant_container .amazing_img_one .amazing_steak {
+        height: 530px; }
+    .Restaurant_container .amazing_img_three {
+      display: none; }
+    .Restaurant_container .amazing_box_2 {
+      position: absolute;
+      left: 7%;
+      top: 17%;
+      width: 50%; }
+  .amazing_lunch, .amazing_people, .amazing_box_1 {
+    display: none; }
+  .video_section .video_image .play_button {
+    width: 3rem; } }
+
+@media screen and (max-width: 899px) {
+  .Restaurant_container {
+    height: 1213px; }
+    .Restaurant_container .amazing_container {
+      margin-left: 1.2rem;
+      top: 29rem; }
+      .Restaurant_container .amazing_container .title_amazing, .Restaurant_container .amazing_container .text_amazing {
+        margin-left: 25px; }
+    .Restaurant_container .amazing_container::before {
+      height: 14.5rem; }
+    .Restaurant_container .amazing_img_one {
+      height: 430px;
+      width: 95%;
+      left: 1.3rem; }
+      .Restaurant_container .amazing_img_one .amazing_steak {
+        height: 430px; }
+    .Restaurant_container .amazing_box_2 {
+      display: none; }
+    .Restaurant_container .video_section {
+      top: 48rem; }
+      .Restaurant_container .video_section .video_image .play_button {
+        width: 2rem; }
+      .Restaurant_container .video_section .video_image .video_text {
+        left: 2rem; }
+        .Restaurant_container .video_section .video_image .video_text p {
+          display: none; }
+      .Restaurant_container .video_section .video_image .video_text::before {
+        height: 3rem; } }
+
+@media screen and (max-width: 768px) {
+  .Restaurant_container {
+    height: 1158px; } }
+
+@media screen and (max-width: 375px) {
+  .Restaurant_container {
+    height: 1091px; }
+    .Restaurant_container .amazing_container {
+      top: 27rem;
+      width: 90%; }
+      .Restaurant_container .amazing_container .text_amazing {
+        margin-top: 24px; }
+      .Restaurant_container .amazing_container .title_amazing, .Restaurant_container .amazing_container .text_amazing {
+        margin-left: 20px; }
+    .Restaurant_container .amazing_container::before {
+      height: 26rem; }
+    .Restaurant_container .amazing_img_one {
+      height: 335px;
+      width: 330px;
+      top: 4rem; }
+      .Restaurant_container .amazing_img_one .amazing_steak {
+        background-position: center;
+        background-size: cover;
+        height: 330px;
+        width: 335px; }
+    .Restaurant_container .video_section {
+      top: 57rem;
+      height: 211px; }
+      .Restaurant_container .video_section .video_image .video_text {
+        display: none; } }

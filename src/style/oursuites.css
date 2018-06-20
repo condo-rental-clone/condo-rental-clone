@@ -1,0 +1,192 @@
+.our-suites-comp {
+  height: 116vh;
+  background-color: #f0e9e1; }
+  .our-suites-comp .suites-head {
+    position: relative;
+    height: 19rem;
+    color: #30373f;
+    padding: 7.5rem 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .our-suites-comp .suites-head h3 {
+      font-family: "Abhaya Libre", serif;
+      font-size: 3.0625rem;
+      margin-left: 1.25rem;
+      transform: translateY(0);
+      transition: translate 0.35s ease-in;
+      font-weight: 600; }
+    .our-suites-comp .suites-head h3::before {
+      content: '';
+      background-color: #ab8c6b;
+      width: 1.5px;
+      height: 0.85em;
+      position: absolute;
+      left: -15%;
+      top: 5%; }
+  .our-suites-comp .suite-flipper {
+    font-size: 1.625em;
+    margin-right: -1.5rem;
+    display: flex;
+    width: 8em;
+    justify-content: space-evenly; }
+    .our-suites-comp .suite-flipper .left-select, .our-suites-comp .suite-flipper .right-select {
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
+      align-items: center;
+      cursor: pointer;
+      padding: 0.25em;
+      transition: color 0.2s ease-in-out; }
+    .our-suites-comp .suite-flipper .prev-suite-num, .our-suites-comp .suite-flipper .next-suite-num {
+      font-family: "Abhaya Libre", serif;
+      margin: 0.75em; }
+    .our-suites-comp .suite-flipper .left-select:hover, .our-suites-comp .suite-flipper .right-select:hover {
+      color: #ab8c6b; }
+    .our-suites-comp .suite-flipper .left-select div.arrow-left {
+      margin: 0.5em;
+      transform: rotate(90deg); }
+    .our-suites-comp .suite-flipper .right-select div.arrow-right {
+      margin: 0.5em;
+      transform: rotate(-90deg); }
+  .our-suites-comp .suites-info {
+    display: flex;
+    width: 100%;
+    position: relative; }
+    .our-suites-comp .suites-info .img-cover {
+      z-index: 2;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #f0e9e1;
+      height: 100%;
+      width: 60%; }
+    .our-suites-comp .suites-info div.suites-img {
+      background: url("./images/suites_real_img.jpg") top;
+      background-size: cover;
+      width: 60%;
+      height: 37.5rem;
+      cursor: pointer;
+      transition: background-color 0.25s ease-in-out; }
+    .our-suites-comp .suites-info .img-cover[data-aos="unveil"] {
+      height: 37.5rem;
+      transition-property: height;
+      transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1); }
+      .our-suites-comp .suites-info .img-cover[data-aos="unveil"].aos-animate {
+        height: 0; }
+    .our-suites-comp .suites-info div.suites-img:hover {
+      background-color: rgba(48, 55, 63, 0.5);
+      background-blend-mode: multiply; }
+    .our-suites-comp .suites-info .suite-detailed-info {
+      width: 40%;
+      position: relative;
+      overflow: hidden; }
+      .our-suites-comp .suites-info .suite-detailed-info h4 {
+        background-color: #f0e9e1;
+        font-size: 2.25em;
+        font-family: "Abhaya Libre", serif;
+        color: #ab8c6b;
+        text-align: right;
+        padding: 1em;
+        cursor: pointer; }
+      .our-suites-comp .suites-info .suite-detailed-info h4:hover {
+        color: #30373f; }
+      .our-suites-comp .suites-info .suite-detailed-info .guest-price-info {
+        background-color: #ab8c6b;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        padding: 1.25em;
+        align-items: center;
+        font-size: 1.0625em; }
+      .our-suites-comp .suites-info .suite-detailed-info .details-box {
+        padding: 2em;
+        color: white;
+        line-height: 175%;
+        font-size: 1.0625em;
+        text-align: right;
+        width: 100%;
+        position: relative;
+        height: 27.05rem; }
+        .our-suites-comp .suites-info .suite-detailed-info .details-box h5 {
+          font-size: 1.5em;
+          font-family: "Abhaya Libre", serif;
+          color: #ab8c6b; }
+    .our-suites-comp .suites-info .suite-detailed-info .before-details {
+      width: 100%;
+      height: 100%;
+      background-color: #30373f;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0; }
+    .our-suites-comp .suites-info .suite-detailed-info .before-details[data-aos="fadeIn"] {
+      opacity: 0;
+      transition-property: opacity;
+      transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1); }
+      .our-suites-comp .suites-info .suite-detailed-info .before-details[data-aos="fadeIn"].aos-animate {
+        opacity: 1; }
+
+@media (max-width: 1069px) {
+  .our-suites-comp {
+    width: 100%;
+    height: 72.125rem; }
+    .our-suites-comp .suites-info {
+      flex-direction: column; }
+      .our-suites-comp .suites-info div.suites-img, .our-suites-comp .suites-info .img-cover[data-aos="unveil"] {
+        width: 100%;
+        height: 400px; }
+      .our-suites-comp .suites-info .pool-img-box {
+        width: calc(100% - 5rem);
+        left: 2.5rem; }
+      .our-suites-comp .suites-info .suite-detailed-info {
+        width: 100%; }
+        .our-suites-comp .suites-info .suite-detailed-info .details-box {
+          height: 17.625rem; } }
+
+@media (max-width: 899px) {
+  .our-suites-comp {
+    height: 65.6rem; }
+    .our-suites-comp .suites-head {
+      flex-direction: column;
+      height: 200px;
+      padding: 3rem 1.5rem; }
+      .our-suites-comp .suites-head h3 {
+        width: 100%; }
+        .our-suites-comp .suites-head h3::before {
+          left: -1.5rem;
+          top: 0.25rem;
+          width: 2px; }
+      .our-suites-comp .suites-head .suite-flipper {
+        margin-left: calc(100% - 7.5em);
+        margin-top: 2.5rem; } }
+
+@media (max-width: 768px) {
+  .our-suites-comp {
+    height: 65.5rem; } }
+
+@media (max-width: 600px) {
+  .our-suites-comp {
+    height: 59.35rem; }
+    .our-suites-comp .suites-info div.suites-img, .our-suites-comp .suites-info .img-cover[data-aos="unveil"] {
+      height: 300px; }
+    .our-suites-comp .suites-info .suite-detailed-info {
+      width: 100%; }
+      .our-suites-comp .suites-info .suite-detailed-info .details-box {
+        height: 17.625rem; } }
+
+@media (max-width: 500px) {
+  .our-suites-comp {
+    height: 64.5rem; } }
+
+@media (max-width: 468px) {
+  .our-suites-comp .suites-info .suite-detailed-info {
+    width: 100%; }
+    .our-suites-comp .suites-info .suite-detailed-info .details-box {
+      height: 26.875rem; } }
+
+@media (max-width: 400px) {
+  .our-suites-comp {
+    height: 68.5rem; } }

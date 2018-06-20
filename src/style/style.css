@@ -1,0 +1,11 @@
+#main-content {
+  position: absolute;
+  top: 0;
+  left: 5rem;
+  width: calc(100vw - 80px); }
+
+@media screen and (max-width: 899px) {
+  #main-content {
+    top: 63px;
+    left: 0;
+    width: 100%; } }
