@@ -1,0 +1,96 @@
+.quote_container {
+  height: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 12rem;
+  margin-top: 8rem; }
+
+.quote_container::before {
+  content: "\201D";
+  color: #c6ab8f;
+  font-family: "Abhaya Libre", sans-serif;
+  font-size: 10rem;
+  position: absolute;
+  left: 12rem; }
+
+.quote_container::after {
+  content: "\201C";
+  position: absolute;
+  font-family: "Abhaya Libre", sans-serif;
+  font-size: 10rem;
+  right: 11rem;
+  color: #c6ab8f;
+  bottom: -153px; }
+
+.quote {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px; }
+  .quote h2 {
+    font-family: "Abhaya Libre", sans-serif;
+    font-size: 49px;
+    margin-bottom: 25px;
+    margin-top: 8%;
+    color: #30373f; }
+  .quote p {
+    font-size: 18px;
+    line-height: 30px;
+    font-style: italic;
+    color: #606060;
+    font-weight: 500; }
+  .quote h5 {
+    font-size: 21px;
+    font-family: "Abhaya Libre", sans-serif;
+    color: #ab8c6b;
+    padding-top: 20px;
+    font-weight: 900; }
+
+@media screen and (max-width: 1260px) {
+  .quote_container {
+    margin-bottom: 10rem;
+    margin-top: 5rem; }
+  .quote_container::before {
+    left: 3rem;
+    font-size: 9rem; }
+  .quote_container::after {
+    right: 3rem;
+    font-size: 9rem; } }
+
+@media screen and (max-width: 1069px) {
+  .quote {
+    width: 83%; }
+    .quote h2 {
+      margin-top: 14%; }
+  .quote_container::after {
+    right: 2rem;
+    bottom: -165px; } }
+
+@media screen and (max-width: 899px) {
+  .quote_container {
+    margin-bottom: 7rem;
+    margin-top: 0rem; }
+    .quote_container .quote {
+      width: 92%; }
+  .quote_container::before {
+    left: .8rem; }
+  .quote_container::after {
+    right: 1rem; } }
+
+@media screen and (max-width: 375px) {
+  .quote_container {
+    height: 405px;
+    margin-bottom: 9.5rem; }
+    .quote_container .quote {
+      width: 78%;
+      margin-top: 9rem; }
+      .quote_container .quote h2 {
+        font-size: 30px; }
+      .quote_container .quote p {
+        font-size: 19px; }
+  .quote_container::before {
+    top: 4.5rem; }
+  .quote_container::after {
+    bottom: -11.5rem; } }

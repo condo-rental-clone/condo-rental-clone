@@ -1,0 +1,244 @@
+html::-webkit-scrollbar {
+  display: none; }
+
+@keyframes slide-down {
+  from {
+    height: 0%; }
+  to {
+    height: 48rem; } }
+
+@keyframes poolShadow {
+  0% {
+    top: -48rem; }
+  50% {
+    top: 0; }
+  100% {
+    top: 48rem; } }
+
+@keyframes boxShadow {
+  0% {
+    top: -22.5rem; }
+  50% {
+    top: 0; }
+  100% {
+    top: 22.5rem; } }
+
+@keyframes steakShadow {
+  0% {
+    top: -22.5rem; }
+  50% {
+    top: 0; }
+  100% {
+    top: 22.5rem; } }
+
+.paradise-comp {
+  margin-top: 225px;
+  height: 150vh;
+  position: relative; }
+  .paradise-comp img {
+    width: 25.27rem; }
+  .paradise-comp .bg-img {
+    position: absolute;
+    width: auto;
+    right: 3%; }
+  .paradise-comp .pool-img-box {
+    width: 25.27rem;
+    position: absolute;
+    left: 2.5%;
+    height: 48rem;
+    overflow-y: hidden;
+    overflow-x: hidden; }
+  .paradise-comp .pool-shadow[data-aos="poolShadowSlide"] {
+    z-index: 5;
+    top: -100%; }
+    .paradise-comp .pool-shadow[data-aos="poolShadowSlide"].aos-animate {
+      animation: poolShadow 1.5s cubic-bezier(0.23, 1, 0.32, 1); }
+  .paradise-comp .pool-img[data-aos="poolImgSlide"] {
+    top: -48rem;
+    transition-property: top;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1); }
+    .paradise-comp .pool-img[data-aos="poolImgSlide"].aos-animate {
+      top: 0; }
+  .paradise-comp .pool-img {
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+    top: -48rem; }
+  .paradise-comp .pool-img, .paradise-comp .pool-shadow {
+    width: 100%;
+    height: 48rem;
+    position: absolute; }
+  .paradise-comp .pool-shadow, .paradise-comp .building-shadow, .paradise-comp .steak-shadow {
+    background-color: #f2ece5; }
+  .paradise-comp .paradise-content {
+    float: right;
+    margin: 3% 13%;
+    width: 45%;
+    font-size: 1.0625em;
+    line-height: 175%; }
+    .paradise-comp .paradise-content h2 {
+      font-size: 3.0625rem;
+      font-family: 'Abhaya Libre', serif;
+      margin-bottom: 1.75rem;
+      font-weight: 600; }
+    .paradise-comp .paradise-content p {
+      font-weight: 400;
+      color: #606060; }
+  .paradise-comp .paradise-content::before {
+    width: 2.5px;
+    background-color: #ab8c6b;
+    position: absolute;
+    content: '';
+    left: 39%;
+    height: 20rem; }
+  .paradise-comp .building-box {
+    height: 22.5rem;
+    position: absolute;
+    top: 49.5%;
+    left: 38.75%; }
+  .paradise-comp .building-box, .paradise-comp .steak-box {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 22.5rem;
+    width: calc(28.5% - 0.50875rem);
+    position: absolute; }
+  .paradise-comp .building-img {
+    background-position: center;
+    background-size: cover; }
+  .paradise-comp .building-img[data-aos="buildingImgSlide"] {
+    top: -22.5rem;
+    transition-property: top;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1); }
+    .paradise-comp .building-img[data-aos="buildingImgSlide"].aos-animate {
+      top: 0; }
+  .paradise-comp .building-shadow[data-aos="buildingShadowSlide"] {
+    z-index: 5;
+    top: -100%; }
+    .paradise-comp .building-shadow[data-aos="buildingShadowSlide"].aos-animate {
+      animation: boxShadow 1.5s cubic-bezier(0.23, 1, 0.32, 1); }
+  .paradise-comp .steak-box {
+    height: 22.5rem;
+    position: absolute;
+    top: 37%;
+    right: 4.75%; }
+  .paradise-comp .steak-img {
+    background-position: center;
+    background-size: cover; }
+  .paradise-comp .steak-img[data-aos="steakImgSlide"] {
+    top: -22.5rem;
+    transition-property: top;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1); }
+    .paradise-comp .steak-img[data-aos="steakImgSlide"].aos-animate {
+      top: 0; }
+  .paradise-comp .steak-shadow[data-aos="steakShadowSlide"] {
+    z-index: 5;
+    top: -100%; }
+    .paradise-comp .steak-shadow[data-aos="steakShadowSlide"].aos-animate {
+      animation: steakShadow 1.5s cubic-bezier(0.23, 1, 0.32, 1); }
+  .paradise-comp .steak-img, .paradise-comp .building-img, .paradise-comp .building-shadow, .paradise-comp .steak-shadow {
+    position: absolute;
+    height: 22.5rem;
+    width: 100%;
+    z-index: 3; }
+  .paradise-comp .shadow {
+    background-color: #f2ece5;
+    width: 31.25rem;
+    position: absolute; }
+  .paradise-comp .left-shadow {
+    height: 18.75rem;
+    left: 4.55%;
+    top: 45.5%; }
+  .paradise-comp .right-shadow {
+    top: 46.5%;
+    right: 10%;
+    height: 25rem; }
+
+@media (max-width: 1400px) {
+  .paradise-comp .pool-img-box {
+    width: 35%; }
+  .paradise-comp .right-shadow {
+    top: 42.5%;
+    left: 53%; }
+  .paradise-comp .steak-box, .paradise-comp .building-box {
+    height: 260px; }
+    .paradise-comp .steak-box .steak-img, .paradise-comp .steak-box .building-img, .paradise-comp .steak-box .building-shadow, .paradise-comp .steak-box .steak-shadow, .paradise-comp .building-box .steak-img, .paradise-comp .building-box .building-img, .paradise-comp .building-box .building-shadow, .paradise-comp .building-box .steak-shadow {
+      height: 260px; }
+  .paradise-comp .building-box {
+    left: 39.5%; }
+  .paradise-comp .steak-box {
+    right: 4%; } }
+
+@media (max-width: 1069px) {
+  .paradise-comp {
+    margin-top: 25rem;
+    width: 100%;
+    padding: 2.5rem; }
+    .paradise-comp .steak-box, .paradise-comp .building-box, .paradise-comp .right-shadow {
+      display: none; }
+    .paradise-comp .pool-img-box {
+      width: calc(100% - 5rem);
+      left: 2.5rem; } }
+
+@media (max-width: 899px) {
+  .paradise-comp {
+    height: 55.5rem;
+    padding: 1.25rem; }
+    .paradise-comp .left-shadow {
+      display: none; }
+    .paradise-comp .pool-img-box {
+      height: 26.875rem;
+      width: calc(100% - 2.5rem);
+      left: 1.25rem; }
+      .paradise-comp .pool-img-box .pool-img[data-aos="poolImgSlide"], .paradise-comp .pool-img-box .pool-shadow[data-aos="poolShadowSlide"] {
+        height: 26.875rem; }
+    .paradise-comp .paradise-content {
+      padding: 2.5rem;
+      margin: 0;
+      margin-top: 26.75rem;
+      width: 100%; }
+      .paradise-comp .paradise-content::before {
+        top: 29.75rem;
+        left: 1.25rem; } }
+
+@media (max-width: 740px) {
+  .paradise-comp {
+    height: 57.5rem; }
+  .paradise-comp .paradise-content::before {
+    height: 21rem; } }
+
+@media (max-width: 600px) {
+  .paradise-comp {
+    height: 55.5rem;
+    margin-top: 23rem; }
+    .paradise-comp .pool-img-box {
+      height: 330px; }
+      .paradise-comp .pool-img-box .pool-img[data-aos="poolImgSlide"], .paradise-comp .pool-img-box .pool-shadow[data-aos="poolShadowSlide"] {
+        height: 330px; }
+    .paradise-comp .paradise-content {
+      margin-top: 20.75rem;
+      padding: 1.5rem; }
+      .paradise-comp .paradise-content h2 {
+        line-height: 2.8125rem; }
+  .paradise-comp .paradise-content::before {
+    height: 26rem;
+    top: 23.5rem; } }
+
+@media (max-width: 500px) {
+  .paradise-comp {
+    height: 64.5rem; }
+    .paradise-comp .paradise-content {
+      padding: 1.5rem; }
+      .paradise-comp .paradise-content h2 {
+        line-height: 2.8125rem; }
+  .paradise-comp .paradise-content::before {
+    height: 29.5rem; } }
+
+@media (max-width: 468px) {
+  .paradise-comp .paradise-content::before {
+    height: 36.5rem; } }
+
+@media (max-width: 400px) {
+  .paradise-comp {
+    height: 68.5rem; }
+    .paradise-comp .paradise-content::before {
+      height: 40rem; } }
