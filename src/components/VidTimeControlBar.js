@@ -23,7 +23,7 @@ class ControlBar extends Component{
     
     handleStart(e, data){
         e.preventDefault()
-        const { total, handleClick, pause } = this.props
+        const { pause } = this.props
         console.log('START: ', pause, data.x, data.y)
         pause()
         // handleClick((data.x/1)/(total/1))
