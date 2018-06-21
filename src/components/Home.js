@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Restaurant from './Restaurant';
 import Welcome from './Welcome';
-import Header from './Header';
+import Header from './Header/Header';
 import Booking from './Booking'
 import CondoSelectModal from './CondoSelectModal'
 
@@ -10,9 +10,9 @@ import OurSuites from './OurSuites';
 import Quote from './Quote';
 import Island from './Island';
 import Footer from './Footer';
-import HeaderModal from '../components/HeaderModal';
-import LoadingPage from '../components/LoadingPage';
-import InquiryForm from '../components/InquiryForm';
+import HeaderModal from './Header/HeaderModal';
+import LoadingPage from './LoadingPage';
+import InquiryForm from './InquiryForm';
 
 
 

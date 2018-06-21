@@ -1,30 +1,19 @@
 import React from 'react';
 import { Component } from 'react';
 import { connect } from 'react-redux';
-import '../style/headerModal.css';
-import Logo from '../style/images/menu-logo_2x.png';
-import SmallLogo from '../style/images/logo_2x.png';
-import { openHeaderModal, closeHeaderModal } from '../ducks/reducer';
+import '../../style/headerModal.css';
+import Logo from '../../style/images/menu-logo_2x.png';
+import SmallLogo from '../../style/images/logo_2x.png';
+import { openHeaderModal, closeHeaderModal } from '../../ducks/reducer';
 // import color from '@material-ui/core/colors/blueGrey';
 
 
 class HeaderModal extends Component {
-  
-
- 
-
     render() {
-
-      
-
-
         return (
-
             <div className="modal-container">
-
                 {this.props.headerModalOpen ?
                     <div onClick={() => { this.props.closeHeaderModal() }} id="modalBtn" className="menu-button2">
-
                         {this.props.headerModalOpen ? 'CLOSE' : 'MENU'}
                         {/* <span className="close-x-animation"></span> */}
                         <div className="close-box-container">
@@ -37,14 +26,10 @@ class HeaderModal extends Component {
                             <span className="hamburger"></span>
                         </span>
                     </div>
-
                 }
-
                 <div id="headerMenuModal" className={"menu-modal-" + (this.props.headerModalOpen ? 'open' : 'closed')}>
-
                     <div className="modal-content">
                         <div className="modal-top-header">
-
                             <div style={{
                                 width: '60px',
                                 height: '60px',
@@ -62,7 +47,6 @@ class HeaderModal extends Component {
                                 fontWeight: '550',
                                 cursor: 'pointer'
                             }} onClick={() => { this.props.closeHeaderModal() }}>COSE</div>
-
                             <div style={{
                                 fontSize: '35px',
                                 paddingLeft: '10px',
@@ -71,13 +55,10 @@ class HeaderModal extends Component {
                                 fontWeight: '-600',
                                 cursor: 'pointer'
                             }} onClick={() => { this.props.closeHeaderModal() }}>X</div>
-
                         </div>
-
                         <div className="header-modal-text-container">
                             <div className="header-modal-logo-container"><img className="header-modal-menu-logo" src={Logo} alt="logo" /></div>
                             <div className="header-modal-content-container">
-
                                 <div className="header-modal-column-1">
                                     <div className="modalFont-home">
                                         <a class="varient-1" href="" className="modalFont-home">Home</a></div>
@@ -91,16 +72,12 @@ class HeaderModal extends Component {
                                     <div className="modalFont3"><a href="" className="modalFont3">Blog</a></div>
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
             </div>
         )
     }
-
 }
 
 function mapStateToProps(state) {

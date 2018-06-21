@@ -1,0 +1,274 @@
+.inquiry-form {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow: auto; }
+
+.inq-cls-btn {
+  text-align: center;
+  padding-top: 3px;
+  height: 30px;
+  border-radius: 90px;
+  width: 30px;
+  font-size: 25px;
+  display: flex;
+  position: absolute;
+  top: 3vh;
+  right: 1.5vw;
+  border: 1px solid black;
+  justify-content: space-around;
+  cursor: pointer; }
+
+.inquiry-close-btn-container {
+  height: 10vh;
+  width: 90vw;
+  background-color: red; }
+
+.inquiry-select-section {
+  display: flex;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  width: 1090px; }
+
+.inquiry-form-container {
+  padding-top: 125px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow: auto; }
+
+.input-cal-container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow: auto;
+  width: 100%; }
+
+.inquiry-form-closed {
+  opacity: 0;
+  position: fixed;
+  transition: 1s;
+  z-index: 98;
+  left: 200vw;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  background-color: #f2ece6; }
+
+.inquiry-form-open {
+  opacity: 1;
+  position: fixed;
+  z-index: 98;
+  transition: 1s;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  background-color: #f2ece6; }
+
+.inquiry-background-logo {
+  position: absolute;
+  margin-top: -200px;
+  height: 90vh;
+  widows: 50vw;
+  z-index: -1; }
+
+.inquiry-input-left {
+  background-color: white;
+  opacity: 1 !important;
+  height: 55px !important;
+  width: 530px !important;
+  margin-right: 20px !important;
+  padding-bottom: 50px !important; }
+
+.inquiry-input-right {
+  background-color: white;
+  opacity: 1 !important;
+  height: 55px !important;
+  width: 530px !important;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  color: #30373f;
+  font-weight: 400; }
+  .inquiry-input-right div div div {
+    padding-left: 20px; }
+    .inquiry-input-right div div div hr {
+      display: none; }
+
+.inquiry-input-left-cal {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  padding-left: 15px;
+  background-color: white;
+  color: #30373f;
+  line-height: 17px;
+  size: 60px;
+  font-weight: 500;
+  border: solid 1px gray;
+  height: 55px;
+  width: 530px;
+  margin-right: 20px;
+  background-image: url("./images/calendar.svg");
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  background-position: right;
+  cursor: pointer; }
+
+.inquiry-input-right-cal {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  padding-left: 15px;
+  background-color: white;
+  color: #30373f;
+  line-height: 17px;
+  opacity: 1;
+  border: solid 1px gray;
+  height: 55px;
+  width: 530px;
+  background-image: url("./images/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 26px 26px;
+  cursor: pointer; }
+
+.inquiry-input-lable-left {
+  font-family: "Abhaya Libre", serif !important;
+  display: flex;
+  position: absolute;
+  font-size: 19px !important;
+  font-weight: bold !important;
+  line-height: 30px;
+  margin-left: 15px;
+  color: #30373f;
+  font-style: normal;
+  width: 530px;
+  text-align: left;
+  margin-top: 3px;
+  margin-left: 30px; }
+
+.inquiry-input-lable-right {
+  font-family: "Abhaya Libre", serif !important;
+  font-size: 19px !important;
+  font-weight: bold !important;
+  line-height: 40px;
+  margin-left: 15px;
+  color: #30373f;
+  font-style: normal;
+  width: 530px;
+  text-align: left;
+  margin-left: -520px; }
+
+.inquiry-input-lable-comments {
+  display: flex;
+  font-family: "Abhaya Libre", serif !important;
+  font-size: 19px !important;
+  font-weight: bold !important;
+  line-height: 40px;
+  position: absolute;
+  margin-left: -530px;
+  color: #30373f; }
+
+.inquiry-title {
+  font-family: "Abhaya Libre", serif;
+  font-size: 43px;
+  font-weight: 800;
+  line-height: 40px;
+  color: black;
+  padding-bottom: 50px; }
+
+.inquiry-input-comments {
+  height: 200px;
+  width: 1081px;
+  border: none;
+  background-color: white;
+  margin-top: 40px; }
+
+.inquiry-input-comments:hover {
+  border: solid 1px gray; }
+
+.inquiry-select-addt {
+  display: flex;
+  font-family: "Abhaya Libre", serif !important;
+  font-size: 19px !important;
+  font-weight: bold !important;
+  line-height: 40px;
+  width: 1081px; }
+
+.inquiry-button {
+  background-color: #30373F;
+  color: white;
+  border: none;
+  font-size: 17px; }
+
+.inquiry-button:hover {
+  color: white;
+  background-color: #ab8c6b; }
+
+.inquiry-checkbox {
+  height: 20px;
+  width: 20px;
+  margin-left: 50px;
+  border-radius: 1; }
+
+.inquire-button-container {
+  padding-bottom: 100px; }
+
+.inquiry-addt-text {
+  padding-top: 1px;
+  padding-left: 10px; }
+
+.inquiry-select-section {
+  margin-left: -90px; }
+
+.guest-input {
+  margin-top: 5px;
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 2;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  color: #30373f;
+  font-weight: 400; }
+
+.apartment-input {
+  margin-top: 50px;
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 2;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  color: #30373f;
+  font-weight: 400; }
