@@ -8,7 +8,7 @@
         width: 100%;
         margin-top: 10%;
         position: relative;
-        height: 1961px;
+        // height: 1961px;
     }
 }
 
@@ -296,7 +296,7 @@
 
 .video_section{
     position: relative;
-    top: 54rem;
+    top: 52rem;
     // max-width: 100%;
     cursor: pointer;
     .video_image{
@@ -384,10 +384,10 @@
             width: 55%;
         }
         .amazing_img_one{
-            width: 35%;
+            width: 34%;
         }
         .amazing_box_2{
-            width: 418px;
+            width: 35%;
         }
         .amazing_img_two{
             margin-left: 2%;
@@ -398,6 +398,7 @@
         }
         .amazing_img_three{
             left: 30.5%;
+            width: 27%;
             .amazing_lunch{
                 width: 317px;
                 height: 260px;
@@ -406,9 +407,21 @@
     }
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1259px){
+    .Restaurant_container{
+        height: 1732px;
+    }
+}
+
+@media screen and (min-width: 1070px) and (max-width: 1199px){
+    .Restaurant_container{
+        height: 1688px;
+    }
+}
+
 @media screen and (max-width: 1069px){
     .Restaurant_container{
-        height: 1422px;
+        height: 1390px;
         .amazing_container{
             top: 36rem;
             position: absolute;
@@ -432,7 +445,7 @@
         .amazing_box_2{
             position: absolute;
             left: 7%;
-            top: 17%;
+            top: 65%;
             width: 50%;
         }
     }
@@ -440,6 +453,7 @@
         display: none;
     }
     .video_section{
+        top: 54rem;
         .video_image{
             .play_button{
                 width: 3rem;
@@ -447,6 +461,12 @@
         }
     }
     
+}
+
+@media screen and (min-width: 900px) and (max-width: 1068px){
+    .Restaurant_container{
+        height: 1297px;
+    }
 }
 
 @media screen and (max-width: 899px){

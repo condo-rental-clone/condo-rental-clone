@@ -3,8 +3,7 @@
   .Restaurant_container .Restaurant {
     width: 100%;
     margin-top: 10%;
-    position: relative;
-    height: 1961px; }
+    position: relative; }
 
 .amazing_container {
   width: 47%;
@@ -166,7 +165,7 @@
 
 .video_section {
   position: relative;
-  top: 54rem;
+  top: 52rem;
   cursor: pointer; }
   .video_section .video_image {
     background: url("../style/images/amazing_restaurant_vid_img.jpg") no-repeat;
@@ -236,23 +235,32 @@
       margin-left: 3%;
       width: 55%; }
     .Restaurant_container .amazing_img_one {
-      width: 35%; }
+      width: 34%; }
     .Restaurant_container .amazing_box_2 {
-      width: 418px; }
+      width: 35%; }
     .Restaurant_container .amazing_img_two {
       margin-left: 2%; }
       .Restaurant_container .amazing_img_two .amazing_people {
         width: 317px;
         height: 260px; }
     .Restaurant_container .amazing_img_three {
-      left: 30.5%; }
+      left: 30.5%;
+      width: 27%; }
       .Restaurant_container .amazing_img_three .amazing_lunch {
         width: 317px;
         height: 260px; } }
 
+@media screen and (min-width: 1200px) and (max-width: 1259px) {
+  .Restaurant_container {
+    height: 1732px; } }
+
+@media screen and (min-width: 1070px) and (max-width: 1199px) {
+  .Restaurant_container {
+    height: 1688px; } }
+
 @media screen and (max-width: 1069px) {
   .Restaurant_container {
-    height: 1422px; }
+    height: 1390px; }
     .Restaurant_container .amazing_container {
       top: 36rem;
       position: absolute;
@@ -271,12 +279,18 @@
     .Restaurant_container .amazing_box_2 {
       position: absolute;
       left: 7%;
-      top: 17%;
+      top: 65%;
       width: 50%; }
   .amazing_lunch, .amazing_people, .amazing_box_1 {
     display: none; }
-  .video_section .video_image .play_button {
-    width: 3rem; } }
+  .video_section {
+    top: 54rem; }
+    .video_section .video_image .play_button {
+      width: 3rem; } }
+
+@media screen and (min-width: 900px) and (max-width: 1068px) {
+  .Restaurant_container {
+    height: 1297px; } }
 
 @media screen and (max-width: 899px) {
   .Restaurant_container {
